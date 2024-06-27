@@ -14,6 +14,10 @@ By using rtsp_redirect_resolver Source1 resolves to Source3 that is readable by 
 
     Client -> Source1 -> Source2 -> Source3 -> Content
 
+### Build:
+    make build
+### Run:
+    make args='<run arguments>' run
 
 ### Usage:
     rtsp_redirect_resolver <format> sources...
@@ -34,3 +38,4 @@ By using rtsp_redirect_resolver Source1 resolves to Source3 that is readable by 
     example:
     rtsp_redirect_resolver args rtsp://127.0.0.1/stream1 https://mybroadcast.com/broadcasts ~/local_broadcasts.json
     rtsp_redirect_resolver http:8123:3600 rtsp://127.0.0.1/stream1 https://mybroadcast.com/broadcasts ~/local_broadcasts.json
+
